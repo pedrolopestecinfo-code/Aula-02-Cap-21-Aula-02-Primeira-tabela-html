@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>TABELA</title>
+
+    <style>
+        
+    {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        
+        table {
+            /* Largura da colunas */
+        width: 400px;
+        /* Para unir as linhas entre as celulas */
+        border-collapse: collapse;
+        }
+
+
+         td {
+            border: 1px solid black;
+            padding: 8px;
+        
+        } 
+
+        tr.linha {
+            background-color: gray;
+        } 
+
+    </style>
+
 </head>
 <body>
     <h1>Exemplo esperado de saída (sem CSS) </h1>
     <table>
-        <tr> 
-            <th>Nome do Produto</th>
-            <th>Categoria</th>
-            <th>Preço (R$)</th>
-            <th>Estoque</th>
+        <tr class="linha"> 
+            <td>Nome do Produto</td>
+            <td>Categoria</td>
+            <td>Preço(R$)</td>
+            <td>Estoque</td>
         </tr>
         <tr> 
             <td>Camiseta</td>
